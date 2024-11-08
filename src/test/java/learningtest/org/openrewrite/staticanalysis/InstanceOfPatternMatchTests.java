@@ -13,8 +13,7 @@ class InstanceOfPatternMatchTests {
     void test() {
         Animal animal = new Human();
 
-        if (animal instanceof Human) {
-            Human human = (Human) animal;
+        if (animal instanceof Human human) {
             human.doSomethingSmarter();
         }
     }
